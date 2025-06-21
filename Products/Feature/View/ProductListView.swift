@@ -46,6 +46,7 @@ private extension ProductListView {
                 }
             }
         }
+        .hideScrollIndicator()
     }
     
     var loadingView: some View {

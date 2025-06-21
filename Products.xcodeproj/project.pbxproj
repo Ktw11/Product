@@ -26,6 +26,7 @@
 		3CF8F3372E066C6D00A95A99 /* Exceptions for "Products" folder in "ProductsTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				CommonUI/PriceView.swift,
 				Feature/View/ProductListView.swift,
 				"Util/Int+Extension.swift",
 			);

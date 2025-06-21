@@ -8,10 +8,13 @@
 위 조건 만족 시, 클론 후 따로 절차 없이 xcodeproj 실행으로 빌드 가능한 상태입니다.
 
 
+
 ## 외부 의존성
 없음
 
-## 🏗️ 아키텍처
+
+
+## 아키텍처
 
 [Clean Architecture]
 프로젝트는 Clean Architecture 원칙을 따라 구성되어 있습니다:
@@ -22,6 +25,8 @@ Data: Repository를 포함
 
 [MVVM]
 ViewModel에서 비즈니스 로직과의 통신을 하고, 결과가 View에 반영되도록 구현되었습니다.
+
+
 
 ## 주요 컴포넌트
 
@@ -38,6 +43,8 @@ ViewModel에서 비즈니스 로직과의 통신을 하고, 결과가 View에 �
 - Repository 패턴으로 데이터 소스 추상화
 - Mock 데이터를 사용하도록 구현된 상태
 
+
+
 ## 기술 스택
 
 - UI Framework: SwiftUI
@@ -45,6 +52,7 @@ ViewModel에서 비즈니스 로직과의 통신을 하고, 결과가 View에 �
 - 비동기 처리: async/await
 - 의존성 주입: Custom Dependency Container + Environment
 - 테스트: XCTest
+
 
 
 ## 특징

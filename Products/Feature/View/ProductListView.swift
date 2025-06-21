@@ -116,12 +116,13 @@ private struct ProductListCell: View {
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                 
-                Text("14,900")
-                    .font(.system(size: 16, weight: .bold))
-                    .foregroundColor(.primary) +
-                Text("원")
-                    .font(.system(size: 16, weight: .regular))
-                    .foregroundColor(.primary)
+                PriceView(
+                    price: product.price,
+                    discountInfo: .init(
+                        discountPrice: product.discountPrice,
+                        discountRate: product.discountRate
+                    )
+                )
             }
             
             Spacer(minLength: 12)

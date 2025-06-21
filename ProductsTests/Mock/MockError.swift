@@ -10,4 +10,5 @@ import Foundation
 enum MockError: Error {
     case unknown
     case notImplemented
+    case cancelled
 }

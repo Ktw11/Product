@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3CF8F7512E06870800A95A99 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF8F7502E06870800A95A99 /* WebKit.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		3C1D1DCA2E06463400E2AE99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,7 +20,6 @@
 		3C1D1DB92E06463300E2AE99 /* Products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Products.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1D1DC92E06463400E2AE99 /* ProductsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF8F2EC2E0648C000A95A99 /* Products.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.xctestplan; sourceTree = "<group>"; };
-		3CF8F7502E06870800A95A99 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF8F7512E06870800A95A99 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +59,6 @@
 				3CF8F2EC2E0648C000A95A99 /* Products.xctestplan */,
 				3C1D1DCC2E06463400E2AE99 /* ProductsTests */,
 				3C1D1DBB2E06463300E2AE99 /* Products */,
-				3CF8F74F2E06870800A95A99 /* Frameworks */,
 				3C1D1DBA2E06463300E2AE99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,14 +70,6 @@
 				3C1D1DC92E06463400E2AE99 /* ProductsTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3CF8F74F2E06870800A95A99 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3CF8F7502E06870800A95A99 /* WebKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

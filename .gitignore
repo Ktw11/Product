@@ -15,7 +15,6 @@ build/
 
 # User-specific
 *.xcuserdata
-*.xcodeproj/project.xcworkspace/
 *.xcodeproj/xcuserdata/
 *.xcuserstate
 

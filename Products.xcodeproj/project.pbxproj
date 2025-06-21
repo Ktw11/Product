@@ -22,6 +22,17 @@
 		3CF8F2EC2E0648C000A95A99 /* Products.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3CF8F3372E066C6D00A95A99 /* Exceptions for "Products" folder in "ProductsTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Feature/View/ProductListView.swift,
+				"Util/Int+Extension.swift",
+			);
+			target = 3C1D1DC82E06463400E2AE99 /* ProductsTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C1D1DBB2E06463300E2AE99 /* Products */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;

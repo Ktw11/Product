@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Properties
+    
+    @Environment(\.dependencyContainer) private var dependencyContainer
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            dependencyContainer.buildProductListView()
+                .padding(.horizontal, 24)
+                .navigationTitle("상품 목록")
+                .navigationBarTitleDisplayMode(.automatic)
         }
-        .padding()
     }
 }
 

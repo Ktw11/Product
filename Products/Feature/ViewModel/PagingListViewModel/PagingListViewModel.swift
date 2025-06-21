@@ -24,6 +24,7 @@ final class PagingListViewModel<Item: Identifiable>: ObservableObject {
     
     private let fetcher: PageFetcher
     private var fetchingTask: Task<PagingFetchResult<Item>, Error>?
+    private var ids: Set<Item.ID> = .init()
     
     // MARK: Methods
     
@@ -77,6 +78,7 @@ final class PagingListViewModel<Item: Identifiable>: ObservableObject {
     func reset() {
         fetchingTask?.cancel()
         state = PagingState()
+        ids = .init()
     }
 }
 
@@ -96,10 +98,14 @@ extension PagingListViewModel {
 
 private extension PagingListViewModel {
     func updateState(from result: PagingFetchResult<Item>) {
+        let filterdItems = result.items
+            .filter { !ids.contains($0.id) }
+        ids = ids.union(result.items.map(\.id))
+        
         state.update {
             $0.isLastPage = result.isLastPage
             $0.cursor = result.nextCursor
-            $0.items.append(contentsOf: result.items)
+            $0.items.append(contentsOf: filterdItems)
         }
     }
 }

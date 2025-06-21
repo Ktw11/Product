@@ -101,6 +101,16 @@ private struct ProductListCell: View {
     let product: ProductListResult.Product
     
     var body: some View {
+        if let linkURL = URL(string: product.linkURLString) {
+            NavigationLink(destination: ProductDetailView(url: linkURL)) {
+                contentView
+            }
+        } else {
+            contentView
+        }
+    }
+    
+    var contentView: some View {
         HStack {
             AsyncImage(url: URL(string: product.imageURLString)) { image in
                     image.resizable()
@@ -114,6 +124,7 @@ private struct ProductListCell: View {
                 Text(product.name)
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundColor(.primary)
+                    .multilineTextAlignment(.leading)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
                 
